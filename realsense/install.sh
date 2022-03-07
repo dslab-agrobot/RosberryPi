@@ -30,10 +30,10 @@ sudo make install
 echo -e "\e[0;34mInstall RealSense SDK pyrealsense2 Python bindings for librealsense\e[0m"
 
 
-cd /home/pi/librealsense/
+`cd /home/pi/librealsense/build
 proxychains4 cmake /home/pi/librealsense -DBUILD_PYTHON_BINDINGS=bool:true -DPYTHON_EXECUTABLE=$(which python3)
 proxychains4 make -j1
-sudo make install
+sudo make install`
 
 echo "export PYTHONPATH=\$PYTHONPATH:/usr/local/lib" >> /home/pi/.zshrc
 source /home/pi/.zshrc

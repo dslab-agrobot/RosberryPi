@@ -1,11 +1,11 @@
 #!/usr/bin/bash
 
-echo -e "\e[0;34mDownload Ros melodic\e[0m"
+echo -e "\e[0;34mDownload turtlebot 3\e[0m"
 
 cd /home/pi/catkin_ws
 
 proxychains4 rosinstall_generator rosserial-python hls-lfcd-lds-driver turtlebot3-msgs dynamixel-sdk turtlebot3 --deps --exclude RPP
-proxychains4 wstool merge -t src  
+proxychains4 wstool merge -t src /home/pi/catkin_ws/melodic-desktop-wet.rosinstall 
 proxychains4 wstool update -t src
 
 echo -e "\e[0;34mCompiling Ros and Install\e[0m"
