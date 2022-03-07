@@ -1,6 +1,6 @@
 # RosberryPi
 
-Rpi 4B+ with Ros melodic and Realsense.
+Rpi 4B+ on Raspbian buster, with Ros melodic and Realsense.
 Recommed steps as follows:
 
 ## (optional) Change default server (apt and pip)
