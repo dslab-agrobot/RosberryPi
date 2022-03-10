@@ -9,8 +9,11 @@ sudo apt-get install automake libtool vim cmake libusb-1.0-0-dev libx11-dev xorg
 
 cd /home/pi
 proxychains4 git clone https://github.com/IntelRealSense/librealsense.git /home/pi/librealsense
-cd /home/pi/librealsense
-sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/ 
+
+# uncoment this if you need UDEV other than RSUSB.
+# NOTE: UDEV will cause conflict on realsens2_camera on ros melodic raspbian buster. 
+# cd /home/pi/librealsense
+# sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/ 
 
 
 echo -e "\e[0;32mPlz apply the udev change manually\e[0m"

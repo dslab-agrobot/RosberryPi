@@ -9,14 +9,15 @@ Recommed steps as follows:
 
 [script](apt-buster/pip.sh) for pip
 
+## 1. Update the packages
+
+sudo apt update && sudo apt upgrade
+
 
 ## (optional) Config system proxy (v2ray + proxychains4)
 
 [script](v2ray32/main.sh) for all. Note you need to get v2ray pkg manually if you can't access it on RPI.
 
-## 1. Update the packages
-
-sudo apt update && sudo apt upgrade
 
 ## 2. Ros
 
@@ -26,6 +27,6 @@ sudo apt update && sudo apt upgrade
 
 ## 3. Realsense
 
-[script](realsense/install.sh) for install realsense
+Install realsense require bit manual operation. Including librealsense2 as SDK, and realsense2_camera realsense2_description in ros.
 
 

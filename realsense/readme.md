@@ -16,6 +16,9 @@ sudo /etc/init.d/dphys-swapfile restart swapon -s
 
 Original url from (datasith)[https://github.com/datasith/Ai_Demos_RPi/wiki/Raspberry-Pi-4-and-Intel-RealSense-D435]
 
+However, this method cause ros realsense2_camera fails to ***Load any resources**. So I fixed the problem by [Intel reply](https://github.com/IntelRealSense/librealsense/issues/7312#issuecomment-694701288).
+
+
 # 2.Preinstall
 
 sudo -u pi bash preinstall.sh

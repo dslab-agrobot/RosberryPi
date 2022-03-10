@@ -9,7 +9,7 @@ proxychains4 wstool merge -t src /home/pi/catkin_ws/melodic-desktop-wet.rosinsta
 proxychains4 wstool update -t src
 
 echo -e "\e[0;34mCompiling Ros and Install\e[0m"
-/home/pi/catkin_ws/src/catkin/bin/catkin_make_isolated  --install-space=/opt/ros/melodic --install
+/home/pi/catkin_ws/src/catkin/bin/catkin_make_isolated  --install-space=/opt/ros/melodic --install --pkg rosserial-python hls-lfcd-lds-driver turtlebot3-msgs dynamixel-sdk turtlebot3
 
 # source /opt/ros/melodic/setup.bash
 source /opt/ros/melodic/setup.zsh

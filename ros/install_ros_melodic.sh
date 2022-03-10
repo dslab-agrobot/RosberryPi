@@ -67,6 +67,4 @@ source /opt/ros/melodic/setup.zsh
 echo "source /opt/ros/melodic/setup.bash" >> /home/pi/.bashrc
 echo "source /opt/ros/melodic/setup.bash" >> /home/pi/.zshrc
 
-
-
 echo -e "\e[0;34mDone !\e[0m"
