@@ -6,3 +6,4 @@ sudo apt install proxychains4
 # - socks4 127.0.0.1 9050
 # + socks5 127.0.0.1 1090
 sudo systemctl enable v2ray 
+sudo systemctl start v2ray 
